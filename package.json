@@ -4,12 +4,9 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build --target lib --name vueLibrary",
     "test": "vue-cli-service test",
     "lint": "vue-cli-service lint"
-  },
-  "dependencies": {
-    "vue": "^2.5.13"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.0.0-beta.6",
@@ -22,7 +19,11 @@
     "babel-jest": "^22.0.4",
     "node-sass": "^4.7.2",
     "sass-loader": "^6.0.6",
-    "vue-template-compiler": "^2.5.13"
+    "vue-template-compiler": "^2.5.13",
+    "vue": "^2.5.13"
+  },
+  "peerDependencies": {
+    "vue": "^2.5.13"
   },
   "browserslist": [
     "> 1%",
